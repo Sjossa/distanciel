@@ -1,0 +1,71 @@
+/* Style général pour le formulaire */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    max-width:300px;
+    margin:50px auto 0 auto;
+    padding: 20px;
+    background-color: #90a1db;
+    box-shadow: 0 0 10px rgba(186, 22, 22, 0.2);
+    margin-top: 25vh;
+}
+
+fieldset {
+    border: 1px solid #1a1313;
+    padding: 20px;
+    
+    
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* Style pour les divs du formulaire */
+div {
+    margin-bottom: 5px;
+}
+
+/* Style pour les labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 0 auto;
+width: fit-content;}
+
+/* Style pour les champs de texte et textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #d71e1e;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style pour le bouton Envoyer */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #0a0808;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style pour les messages d'erreur (si vous utilisez la validation HTML5) */
+input:invalid,
+textarea:invalid {
+    border: 1px solid #f00;
+}
