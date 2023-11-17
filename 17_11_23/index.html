@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        .quiz {
+            margin-top: 20px;
+        }
+
+        .quiz-question {
+            margin-bottom: 10px;
+            font-weight: bolder;
+        }
+        a{color: red;}
+    </style>
+    <title>SQL, HTML5, CSS, JavaScript</title>
+</head>
+
+<body>
+    <section>
+        <h2>Partie : SQL</h2>
+        <pre>
+<h1> Exercise 1</h1>
+UPDATE employees
+SET nom = 'alicia'
+WHERE employees_id = 1;
+
+<h1>Exercise 2</h1>
+DELETE FROM employees
+WHERE employees_id = 3;
+
+<h1>Exercise 3</h1>
+DROP TABLE customers;
+
+<h1>Exercise 4</h1>
+ALTER TABLE employees 
+ADD phonenumber varchar(15);
+        </pre>
+    </section>
+
+    <section>
+        <h2>Partie : HTML-CSS</h2>
+        <div class="quiz">
+            <div class="quiz-question">Quelle balise HTML5 est utilisée pour définir une section indépendante ou un groupe de contenu dans un document web?</div>
+            <pre>
+a) &lt;div&gt;
+b)<a> &lt;section&gt;</a>
+c) &lt;article&gt;
+d) &lt;span&gt;
+            </pre>
+
+            <div class="quiz-question">Qu'est-ce que HTML5?</div>
+            <pre>
+a) <a>HyperText Markup Language 5 </a>
+b) High-Level Text Markup Language 5 
+c) Hyper Transfer Markup Language 5
+            </pre>
+
+            <div class="quiz-question">Quelle balise HTML5 est utilisée pour définir le contenu principal d'un document HTML5?</div>
+            <pre>
+a) <a>&lt;header&gt;</a> 
+b) &lt;main&gt; 
+c) &lt;section&gt;
+            </pre>
+
+            <div class="quiz-question">Comment inclure une feuille de style externe dans une page HTML5?</div>
+            <pre>
+a) &lt;style&gt; 
+b) <a>&lt;link&gt;</a> 
+c) &lt;css&gt;
+            </pre>
+
+            <div class="quiz-question">Quelle balise est utilisée pour définir une liste ordonnée?</div>
+            <pre>
+a) &lt;ul&gt; 
+b) <a>&lt;ol&gt;</a> 
+c) &lt;li&gt;
+            </pre>
+
+            <div class="quiz-question">Quelle balise est utilisée pour insérer une image dans une page HTML5?</div>
+            <pre>
+a) <a>&lt;img&gt;</a>
+b) &lt;picture&gt; 
+c) &lt;image&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        
+        <h2>Partie : JavaScript</h2>
+        <pre>
+            <h1>Exercise 1</h1>
+var a = 2;
+var b = 2;
+document.write((a + b) * 2);
+<script>var a = 2;
+    var b = 2;
+    document.write((a + b) * 2);</script>
+
+<h1>Exercise 2</h1>
+let num = 15;
+if (num % 2 === 0) {
+    console.log(num + " est pair");
+} else {
+    console.log(num + " est impair");
+}
+<script>let num = 15;
+    if (num % 2 === 0) {
+        console.log(num + " est pair");
+    } else {
+        console.log(num + " est impair"); }
+        </script>
+   
+<h1>Exercise 3</h1>
+let fruits = ["pomme", "orange", "banane"];
+fruits.push("raisin");
+console.log("Nouvelle longueur du tableau : " + fruits.length);
+<script>let fruits = ["pomme", "orange", "banane"];
+fruits.push("raisin");
+console.log("Nouvelle longueur du tableau : " + fruits.length);</script>
+<h1>Exercise 4</h1>
+function additionner(a, b) {
+    return a + b;
+}
+
+// Exemple d'utilisation de la fonction
+let resultat = additionner(3, 5);
+console.log("La somme est : " + resultat);
+
+<script>function additionner(a, b) {
+    return a + b;
+}
+
+// Exemple d'utilisation de la fonction
+let resultat = additionner(3, 5);
+console.log("La somme est : " + resultat);
+</script>
+
+<h1>Exercise 5</h1>
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+<script>for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}</script> 
+
+<h1>Exercise 6</h1>
+let phrase = "Bonjour, comment ça va ?";
+console.log("Longueur de la phrase : " + phrase.length);
+console.log("Version en majuscules : " + phrase.toUpperCase());
+<script>let phrase = "Bonjour, comment ça va ?";
+console.log("Longueur de la phrase : " + phrase.length);
+console.log("Version en majuscules : " + phrase.toUpperCase());</script>
+
+<h1>Exercise 7</h1>
+const aujourdHui = new Date();
+
+const jour = aujourdHui.getDate();
+const mois = aujourdHui.getMonth() + 1; // Les mois commencent à 0, donc on ajoute 1
+const annee = aujourdHui.getFullYear();
+
+const dateAujourdhuiFormattee = `${jour}/${mois}/${annee}`;
+
+console.log("Date d'aujourd'hui : ", dateAujourdhuiFormattee);
+
+<script>const aujourdHui = new Date();
+
+const jour = aujourdHui.getDate();
+const mois = aujourdHui.getMonth() + 1; // Les mois commencent à 0, donc on ajoute 1
+const annee = aujourdHui.getFullYear();
+
+const dateAujourdhuiFormattee = `${jour}/${mois}/${annee}`;
+
+console.log("Date d'aujourd'hui : ", dateAujourdhuiFormattee);</script>
+
+<h1>Exercise 8</h1>
+let numbers = [8, 15, 22, 30, 18];
+
+// Utiliser la méthode filter pour filtrer les nombres pairs
+let nombresPairs = numbers.filter(function (number) {
+    return number % 2 === 0;
+});
+
+// Afficher le résultat
+console.log("Nombres pairs : " + nombresPairs);
+<script>let numbers = [8, 15, 22, 30, 18];
+
+// Utiliser la méthode filter pour filtrer les nombres pairs
+let nombresPairs = numbers.filter(function (number) {
+    return number % 2 === 0;
+});
+
+// Afficher le résultat
+console.log("Nombres pairs : " + nombresPairs);
+</script>
+
+<h1>exercise 9</h1>
+let numbers = [8, 15, 22, 30, 18];
+
+// Utiliser la méthode reduce pour calculer la somme des éléments
+let somme = numbers.reduce(function (acc, current) {
+    return acc + current;
+}, 0); // La valeur initiale de l'accumulateur est 0
+
+// Afficher le résultat
+console.log("Somme des éléments : " + somme);
+
+<script>let numbers = [8, 15, 22, 30, 18];
+
+    // Utiliser la méthode reduce pour calculer la somme des éléments
+    let somme = numbers.reduce(function (acc, current) {
+        return acc + current;
+    }, 0); // La valeur initiale de l'accumulateur est 0
+    
+    // Afficher le résultat
+    console.log("Somme des éléments : " + somme);
+    </script>
+
+        </pre>
+    </section>
+</body>
+
+</html>
