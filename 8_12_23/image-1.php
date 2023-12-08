@@ -21,4 +21,4 @@ imagettftext($image, $taillePolice, 0, $texteX, $texteY, $couleurTexte, 'arial.t
 header("Content-type: image/png");
 imagepng($image);
 imagedestroy($image);
-?>ffff
+?>
