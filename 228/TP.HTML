@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercices JavaScript</title>
+  <style>  
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    
+    section {
+      margin-bottom: 30px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #007BFF;
+    }
+    
+    p {
+      margin: 10px 0;
+    }
+    
+    code {
+      font-family: 'Courier New', monospace;
+      background-color: #f4f4f4;
+      padding: 2px 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Exercices 1</h1>
+    <code>
+      function filtrerPairs(tableau) { <br>
+        return tableau.filter(nombre => nombre % 2 === 0);
+      }
+      <br>
+      const tableau1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br>
+      const result1 = filtrerPairs(tableau1);<br>
+      document.write(result1);<br>
+      Le résultat est :
+      <script>
+        function filtrerPairs(tableau) {
+          return tableau.filter(nombre => nombre % 2 === 0);
+        }
+
+        const tableau1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const result1 = filtrerPairs(tableau1);
+        document.write(result1); 
+      </script>
+    </code>
+  </section>
+
+  <section>
+    <h1>Exercices 2</h1>
+    <code>
+      function calculerSomme(tableau) {<br>
+        return tableau.reduce((acc, nombre) => acc + nombre, 0);
+      }
+      <br>
+      const tableau2 = [1, 2, 3, 4, 5];<br>
+      const result2 = calculerSomme(tableau2);<br>
+      document.write(result2); <br>
+      Le résultat est :
+      <script>
+        function calculerSomme(tableau) {
+          return tableau.reduce((acc, nombre) => acc + nombre, 0);
+        }
+
+        const tableau2 = [1, 2, 3, 4, 5];
+        const result2 = calculerSomme(tableau2);
+        document.write(result2); 
+      </script>      
+    </code>
+  </section>
+
+  <section>
+    <h1>Exercices 3</h1>
+    <code>
+      function trouverMax(tableau) {<br>
+        return Math.max(...tableau);
+      }
+      <br>
+      const tableau3 = [10, 5, 8, 20, 15];<br>
+      const result3 = trouverMax(tableau3);<br>
+      document.write(result3); <br>
+      Le plus grand nombre est :
+      <script>
+        function trouverMax(tableau) {
+          return Math.max(...tableau);
+        }
+
+        const tableau3 = [10, 5, 8, 20, 15];
+        const result3 = trouverMax(tableau3);
+        document.write(result3);
+      </script>
+    </code>
+  </section>
+
+  <section>
+    <h1>Exercices 4</h1>
+    <code>
+      function fusionnerTableaux(tableau1, tableau2) {<br>
+        return tableau1.concat(tableau2);
+      }
+      <br>
+      const tableau4a = [1, 2, 3];<br>
+      const tableau4b = [4, 5, 6];<br>
+      const result4 = fusionnerTableaux(tableau4a, tableau4b);<br>
+      document.write(result4); <br>
+      La fusion donne :
+      <script>
+        function fusionnerTableaux(tableau1, tableau2) {
+          return tableau1.concat(tableau2);
+        }
+
+        const tableau4a = [1, 2, 3];
+        const tableau4b = [4, 5, 6];
+        const result4 = fusionnerTableaux(tableau4a, tableau4b);
+        document.write(result4); 
+      </script>
+    </code>
+  </section>
+
+  <section>
+    <h1>Exercices 5</h1>
+    <code>
+      function elementPresent(tableau, element) {<br>
+        return tableau.includes(element);
+      }
+      <br>
+      const tableau5 = [10, 20, 30, 40, 50];<br>
+      const elementToCheck = 30;<br>
+      const result5 = elementPresent(tableau5, elementToCheck);<br>
+      document.write(result5); <br>
+      Est-ce que l'élément 30 est présent :
+      <script>
+        function elementPresent(tableau, element) {
+          return tableau.includes(element);
+        }
+
+        const tableau5 = [10, 20, 30, 40, 50];
+        const elementToCheck = 30;
+        const result5 = elementPresent(tableau5, elementToCheck);
+        document.write(result5);
+      </script>
+    </code>
+  </section>
+
+  <section>
+    <h1>Exercices 6</h1>
+    <code>
+      function inverserTableau(tableau) {<br>
+        return tableau.reverse();
+      }
+      <br>
+      const tableau6 = [1, 2, 3, 4, 5];<br>
+      const result6 = inverserTableau(tableau6);<br>
+      console.log(result6); <br>
+      En inversant le tableau, il ressemble à ceci :
+      <script>
+        function inverserTableau(tableau) {
+          return tableau.reverse();
+        }
+
+        const tableau6 = [1, 2, 3, 4, 5];
+        const result6 = inverserTableau(tableau6);
+        document.write(result6); 
+      </script>
+    </code>
+  </section>
+
+</body>
+</html>
+
