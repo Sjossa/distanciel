@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+document.cookie = "prenom=John";
+
+
+var prenomCookie = document.cookie.split('; ').find(cookie => cookie.startsWith("prenom=")).split('=')[1];
+document.write("Valeur du cookie 'prenom':", prenomCookie);
+console.log("Valeur du cookie 'prenom':", prenomCookie);
+
+
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+
+var usernameCookie = document.cookie.split('; ').find(cookie => cookie.startsWith("username="));
+document.write("Cookie 'username' après suppression:", usernameCookie);
+console.log("Cookie 'username' après suppression:", usernameCookie);
+
+
+var expirationDate = new Date();
+expirationDate.setHours(expirationDate.getHours() + 1);
+document.cookie = "sessionID=123; expires=" + expirationDate.toUTCString() + "; path=/;";
+
+
+localStorage.setItem("réponse", "42");
+
+
+var reponseLocalStorage = localStorage.getItem("réponse");
+document.write("Valeur stockée dans le localStorage avec la clé 'réponse':", reponseLocalStorage);
+console.log("Valeur stockée dans le localStorage avec la clé 'réponse':", reponseLocalStorage);
+</script>
+</body>
+</html>
